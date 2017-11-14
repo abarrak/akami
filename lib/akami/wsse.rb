@@ -155,7 +155,7 @@ module Akami
         "wsse:Security" => {
           key => hash
         },
-        :attributes! => { "wsse:Security" => { "xmlns:wsse" => WSE_NAMESPACE } }
+        :attributes! => { "wsse:Security" => { "env:mustUnderstand" => "1", "xmlns:wsse" => WSE_NAMESPACE } }
       }
 
       unless extra_info.empty?
